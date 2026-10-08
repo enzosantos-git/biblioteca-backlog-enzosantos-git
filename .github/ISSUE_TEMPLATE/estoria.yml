@@ -1,0 +1,65 @@
+name: Estória de usuário
+description: Nova estória para o backlog da Biblioteca Saber Livre
+labels: ["estória"]
+body:
+  - type: input
+    id: como
+    attributes:
+      label: Como (perfil de usuário)
+      placeholder: leitor
+    validations:
+      required: true
+  - type: input
+    id: quero
+    attributes:
+      label: Quero (ação)
+      placeholder: renovar meu empréstimo pela internet
+    validations:
+      required: true
+  - type: input
+    id: para
+    attributes:
+      label: Para (benefício)
+      placeholder: continuar a leitura sem ir ao balcão
+    validations:
+      required: true
+  - type: textarea
+    id: regras
+    attributes:
+      label: Regras de negócio relacionadas
+      placeholder: RN04, RN06
+    validations:
+      required: true
+  - type: input
+    id: estimativa
+    attributes:
+      label: Estimativa em pontos
+      placeholder: "3"
+    validations:
+      required: true
+  - type: dropdown
+    id: prioridade
+    attributes:
+      label: Prioridade
+      options:
+        - Alta
+        - Média
+        - Baixa
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Critérios de aceite (Dado / Quando / Então)
+      value: |
+        - Dado ..., quando ..., então ...
+        - Dado ..., quando ..., então ...
+    validations:
+      required: true
+  - type: textarea
+    id: tarefas
+    attributes:
+      label: Tarefas
+      value: |
+        - [ ] ...
+
